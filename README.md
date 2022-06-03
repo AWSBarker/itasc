@@ -16,7 +16,7 @@ Based on Django framework with mysql database, see requirements.txt for environm
 
 ### FUNCTIONS
 - Login is required access a. Admin panel and b. iTASC Dashboard
-- Admin panel login allows administrators the rights to export of data CSV, creation of other users/groups, editing items
+- Admin panel login allows administrators the rights to export of data CSV, creation of other users/groups and editing items such as adding patients.
 - User login and rights are controlled by Admin 
 - Pairings are made to match devices (IMEI) to subjects (PatientID) - A pair is unique one-to-one
 - A pairing is deleted (unpaired) in Admin panel, it does not delete the measurements allocated to a patient
