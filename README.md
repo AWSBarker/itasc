@@ -1,7 +1,7 @@
 # iTASC 
 ### M+hub webhook dashboard and data administration site for iTASC trial.
 
-Needs to be run on public URL SSL certified server (i.e. AWS Lightsail) to expose a webhook for D40g JSON basic (set in M+hub)
+Needs to be run on public URL SSL certified server (i.e. AWS Lightsail) to expose a webhook for D40g JSON basic (managed in M+hub)
 
 Based on Django framework with mysql database, see requirements.txt for environment. See settings.py for production guides and links. .env is required for secrets.
 
@@ -17,7 +17,7 @@ Based on Django framework with mysql database, see requirements.txt for environm
 ### FUNCTIONS
 - Login is required access a. Admin panel and b. iTASC Dashboard
 - Admin panel login allows administrators the rights to export of data CSV, creation of other users/groups and editing items such as adding patients.
-- User login and rights are controlled by Admin 
+- User login and rights are controlled by Admin. All Users must be granted 'Staff' status to allow admin login. 
 - Pairings are made to match devices (IMEI) to subjects (PatientID) - A pair is unique one-to-one
 - A pairing is deleted (unpaired) in Admin panel, it does not delete the measurements allocated to a patient
 - A apired device cannot be allocated to another patient, it must be unpaired first
@@ -32,6 +32,7 @@ Based on Django framework with mysql database, see requirements.txt for environm
 ## Development TODO & NICE To HAVEs in v1
 - coloured sys/Dia ranges (like in Admin)
 - graphics per device/pairing (see awsb.ddns.net/eliot/ )
+- FHIR HL7 format required - need to edit webhook from JSON
 
 
 ## Source and concept from awsb.ddns.net
