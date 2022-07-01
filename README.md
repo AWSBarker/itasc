@@ -1,4 +1,7 @@
 # iTASC 
+
+Enables self-hosted data capture from M+ devices via M+hub, pseudonomised subject pairing and data administration tools.
+
 ### M+hub webhook dashboard and data administration site for iTASC trial.
 
 Needs to be run on public URL SSL certified server (i.e. AWS Lightsail) to expose a webhook for D40g JSON basic (managed in M+hub)
