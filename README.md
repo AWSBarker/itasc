@@ -1,6 +1,6 @@
 # iTASC 
 
-Enables self-hosted data capture from M+ devices via M+hub, pseudonomised subject pairing and data administration tools.
+Enables self-hosted data capture from D40g/BP800 (M+ devices) via M+hub, pseudonomised subject pairing and data administration tools.
 
 ### M+hub webhook dashboard and data administration site for iTASC trial.
 
@@ -30,6 +30,7 @@ Based on Django framework with mysql database, see requirements.txt for environm
 
 ### Admin and User Help
 - Admin panel is the main toolbox area (standard Django admin)
+- Unpair option on home page would be really useful 
 - User Help in progress
 
 ## Development TODO & NICE To HAVEs in v1
