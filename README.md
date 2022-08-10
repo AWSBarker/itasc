@@ -20,7 +20,7 @@ Based on Django framework with mysql database, see requirements.txt for environm
 NOTE : depending on your version of MySQLDB / MariaDB there might be strict interepretation of datetime/timestamp. It seems > 10.6 MariaDB may struggle with some device timestamps that include nanoseconds and timezone information (measurements_timestamp 2022-07-19 20:11:13.464097332+00:00), so 
 1. first try to set USE_TZ = False in settings.py.
 2. add the following ts converter to the custom save module in itasc/models.py
-"""
+'''
     def save(self, *args, **kwargs):
         try:
             self.measurements_timestamp = pd.to_datetime(self.measurements_timestamp, format='%Y-%m-%dT%H:%M:%S%Z').replace(tzinfo=None)
@@ -38,7 +38,7 @@ NOTE : depending on your version of MySQLDB / MariaDB there might be strict inte
             print(f'warning patientid not found with {self.device_imei}')
             self.patientid = None
         super().save(*args, **kwargs)  # Call the "real" save() method.
-"""
+'''
 
 ### FUNCTIONS
 - Login is required access a. Admin panel and b. iTASC Dashboard
