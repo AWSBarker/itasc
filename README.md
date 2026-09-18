@@ -1,6 +1,6 @@
 # iTASC 
 
-Enables self-hosted data capture from Medisanteé cellular devices i.e. D40g BPM, via M+hub and the creation, management and administration of pairing of device s/n to subject ID. Standard django data administration tools are available.
+Enables self-hosted data capture from Medisanté cellular medical devices i.e. D40g BPM, via M+hub and the creation, management and administration of pairing of device s/n to subject ID. Standard django data administration tools are available.
 
 ### M+hub webhook dashboard and data administration site designed for the iTASC trial.
 
