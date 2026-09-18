@@ -1,8 +1,8 @@
 # iTASC 
 
-Enables self-hosted data capture from D40g/BP800 (M+ devices) via M+hub, pseudonomised subject pairing and data administration tools.
+Enables self-hosted data capture from Medisanteé cellular devices i.e. D40g BPM, via M+hub and the creation, management and administration of pairing of device s/n to subject ID. Standard django data administration tools are available.
 
-### M+hub webhook dashboard and data administration site for iTASC trial.
+### M+hub webhook dashboard and data administration site designed for the iTASC trial.
 
 Needs to be run on public URL SSL certified server (i.e. AWS Lightsail) to expose a webhook for D40g JSON basic (managed in M+hub)
 
